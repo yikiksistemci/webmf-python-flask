@@ -1,5 +1,5 @@
 pipeline {
-  agent { docker { image 'python:3.9.4' } }
+  agent { label 'jenkins-slave-python' }
   stages {
     stage('build') {
       steps {
